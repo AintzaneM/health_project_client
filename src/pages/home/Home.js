@@ -1,7 +1,79 @@
 import React from 'react'
+import styled from 'styled-components'
+import ImgSlider from '../../components/slider/ImgSlider'
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <HomeContainer className='home-container'>
+      <ContainerTop className='top-home-container'>
+        <p className='small-text-home'>CONSCIENCIA</p>
+        <h1 className='motivational-text-home'>Toma el control de tu mente</h1>
+        <p className='small-text-home'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+
+
+      </ContainerTop>
+      <ImgSlider/>
+      <ContainerButtonHome>
+            <a href="">
+                <span>CONÓCENOS</span>
+            </a>
+
+            <a href="">
+                <span>CREA TU CUENTA</span>
+            </a>
+            
+      </ContainerButtonHome>
+      home
+      
+
+
+    </HomeContainer>
   )
 }
+
+const HomeContainer = styled.div`
+// background-color: #e0cdcd
+`
+
+const ContainerTop = styled.div`
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+// background-color: #e0cdcd
+padding-top: 50px ;
+margin: auto;
+
+p{
+  padding-bottom: 10px;
+  
+}
+h1{
+  font-size: 70px;
+  padding-bottom:  10px;
+}
+`
+
+const ContainerButtonHome = styled.div`
+margin-top: 5%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+
+  a{
+    text-decoration: none;
+    margin-right: 20px;
+    background-color: #ffc05c;
+    border-radius: 14px;
+    padding:10px;
+    position: relative;
+    
+    &:hover{
+    background-color: #3c096c;
+    color: #e0cdcd;
+    }
+    
+
+`
+
