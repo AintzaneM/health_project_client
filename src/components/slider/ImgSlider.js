@@ -3,8 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const ImgSlider = (props) => {
-    let settings = {
+const ImgSlider = () => {
+    const settings = {
         dots: true,
         infinite: true,
         speed: 500,
@@ -16,22 +16,22 @@ const ImgSlider = (props) => {
         <Carousel {...settings}>
             <Wrap>
                 <a>
-                    <img src='/banner2.png' alt="" />
+                    <img src='./banner2.png' alt="" />
                 </a>
             </Wrap>
             <Wrap>
                 <a>
-                    <img src='/banner2.png' alt="" />
+                    <img src='./banner2.png' alt="" />
                 </a>
             </Wrap>
             <Wrap>
                 <a>
-                    <img src='/banner2.png' alt="" />
+                    <img src='./banner2.png' alt="" />
                 </a>
             </Wrap>
             <Wrap>
                 <a>
-                    <img src='/banner2.png' alt="" />
+                    <img src='./banner2.png' alt="" />
                 </a>
             </Wrap>
         </Carousel>
@@ -42,6 +42,7 @@ const Carousel = styled(Slider)`
 
 margin-top: 30px;
 margin-bottom: 30px;
+
 & > button {
     opacity: 0;
     height: 100%;
@@ -79,6 +80,7 @@ cursor: pointer;
 position: relative;
 
 
+
 a {
     border-radius: 4px;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px , rgb(0 0 0 / 73%) 0px 16px 10px -10px;
@@ -86,11 +88,13 @@ a {
     display: block;
     position: relative;
     padding: 4px;
+    border-radius: 20px;
     
 
     img {
         width: 100%;
-        height: 10%;
+        height: 100%;
+        border-radius: 20px;
         
     }
 
