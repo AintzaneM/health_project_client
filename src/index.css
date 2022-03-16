@@ -7,12 +7,24 @@ yellow: ffc05c
 
 */
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    box-sizing: border-box;
+   
+  }
+/* 
 *{
     margin: 0;
-    font-family: "Fredoka"
     
-}
+    
+} */
 
 body {
     background-color: #e0cdcd;
+    margin:0;
+    padding: 0;
+    font-family: "Fredoka"
 }
