@@ -46,6 +46,7 @@ const Container = styled.div`
 padding: 0 0 26px;
 margin-left: 35px;
 
+
 `;
 
 const Content = styled.div`
@@ -72,6 +73,7 @@ transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 border: 3px solid rgba(249, 249, 249, 0.1);
 height: 80%;
 width: 80%;
+
 
 p{
 color:white;

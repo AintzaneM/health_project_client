@@ -20,7 +20,7 @@ export default BannerNews
 
 const ContainerBannerNews = styled.div`
 background-color: #ffc05c;
-margin: 40px 10px;
+// margin: 40px 10px;
 border-radius: 20px;
 width: 70%;
 margin: 50px auto;
@@ -37,7 +37,7 @@ color: #3c096c;
 
     a{
         text-decoration: none;
-        margin-left: 20%;
+        margin-left: 10%;
         font-weight: bold;
         background-color: #e0cdcd;
         border-radius: 14px;
