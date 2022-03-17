@@ -24,13 +24,18 @@ export const Home = () => {
       </ContainerTop>
       <ImgSlider/>
       <BannerNews/>
-      <Services/>
+      <ContainerServices>
+        <Services/>
+        <Services/>
+      </ContainerServices>
+
+      
 
       
       
         
       
-      home
+      
       
 
 
@@ -88,3 +93,6 @@ font-weight: bold;
 
 `
 
+const ContainerServices = styled.div`
+margin-bottom: 50px;
+`

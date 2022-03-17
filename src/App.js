@@ -1,5 +1,7 @@
 import { Header } from "./components/header/Header";
 import { Home } from "./pages/home/Home"
+import Footer from './components/footer/Footer'
+
 
 
 
@@ -8,6 +10,8 @@ function App() {
     <div className="App">
       <Header/>
       <Home/>
+      <Footer/>
+      
      
     </div>
   );
