@@ -16,8 +16,8 @@ const Footer = () => {
                 <p>
                 ¿HABLAMOS?<br/>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa 
-                corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque 
+                Iste atque ea quis molestias.<br/> Fugiat pariatur maxime quis culpa 
+                corporis vitae repudiandae aliquam voluptatem veniam,<br/> est atque cumque 
                 </p>
 
                 <a href="">
@@ -40,14 +40,15 @@ const Footer = () => {
                     <Email className="email-icon"/>
                 </FooterIcons> 
                 </p>
+                <FooterBottom>
+                    <span>© 2021 Copyright: Cnsciencia project</span> 
+                </FooterBottom>
                 </div>
             </TextRight>
             
         </FooterRight>      
 
-        <FooterBottom>
-       <span>© 2021 Copyright: Cnsciencia project</span> 
-        </FooterBottom>
+       
 
         
         
@@ -61,16 +62,17 @@ export default Footer
 const ContainerFooter = styled.div`
 // position: sticky;
 // margin-top: 40px;
+padding-top: 30px;
 
 // top: 0;
 // left: 0;
 // right: 0;
-height: 230px;
+height: 200px;
 width: 100%;
 background-color: #ffc05c;
 display:flex;
 align-items: center;
-justify-content:center;
+// justify-content:center;
 flex-direction: column;
 `
 
@@ -93,20 +95,22 @@ padding-top: 40px;
 display:flex;
 flex-direction: row;
 align-items: center;
-justify-content: center;
+// justify-content: center;
 width: 100%;
 height: 80px;
-margin-bottom: 10px;
+// margin-bottom: 10px;
 
 
 `
 const TextLeft = styled.div`
 
 // height: 5vh;
-width: 50%;
+// width: 50%;
 display:flex;
 flex-direction: column;
-justify-content: space-around;
+// justify-content: space-around;
+padding-left: 100px;
+padding-right: 30%;
 
 
 p{
@@ -140,7 +144,10 @@ const TextRight = styled.div`
 // display: flex;
 // justify-content: flex-end;
 // width: 100%
-margin-left: 80px;
+display:flex;
+flex-direction: column;
+align-items: center;
+margin-right: 20px;
 
 p{
     
@@ -151,7 +158,7 @@ p{
 
 const FooterBottom = styled.div`
 position:relative;
-margin-top: 60px;
+// margin-top: 60px;
 
 // height: 60px;
 // margin-top: 20px;
