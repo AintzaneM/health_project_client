@@ -18,9 +18,9 @@ export const Header = () => {
         
         <NavMenuCenter className='NavMenuCenter'> 
        
-            <a href="">
+            <Link href="/quienes-somos">
                 <span>Quiénes somos</span>
-            </a>
+            </Link>
             <a href="">
                 <span>Formación</span>
             </a>
