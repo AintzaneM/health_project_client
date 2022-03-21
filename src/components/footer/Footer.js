@@ -11,8 +11,8 @@ const Footer = () => {
                 <p>
                 ¿HABLAMOS?<br/>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Iste atque ea quis molestias.<br/> Fugiat pariatur maxime quis culpa 
-                corporis vitae repudiandae aliquam voluptatem veniam,<br/> est atque cumque 
+                Iste atque ea quis molestias.Fugiat pariatur maxime quis culpa 
+                corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque 
                 </p>
                 <a href="">
                     Queremos saber de ti
@@ -22,7 +22,7 @@ const Footer = () => {
                 </FooterBottom>
             </TextLeft>
             
-            <TextRight >
+            {/* <TextRight >
                 <p className="container-left">CONTACTA<br/>
                 <Call/> 6XX XX XX XX <br/>
                 <Home/>Iste atque ea quis molestias.
@@ -31,7 +31,7 @@ const Footer = () => {
                     <Email className="email-icon"/>
                 </FooterIcons> 
                 </p>
-            </TextRight>
+            </TextRight> */}
         </FooterRight>      
     </ContainerFooter>
   )
@@ -42,22 +42,22 @@ export default Footer
 const ContainerFooter = styled.div`
 // position: sticky;
 // margin-top: 40px;
-padding-top: 30px;
-display: grid;
-grid-gap: 25px;
-gap: 25px;
-grid-template-columns: repeat(4, minmax(0, 1fr));
+// padding-top: 30px;
+// display: grid;
+// grid-gap: 25px;
+// gap: 25px;
+// grid-template-columns: repeat(4, minmax(0, 1fr));
 
 // top: 0;
 // left: 0;
 // right: 0;
-height: 200px;
+height: 300px;
 width: 100%;
 background-color: #ffc05c;
 display:flex;
 align-items: center;
 // justify-content:center;
-flex-direction: column;
+// flex-direction: column;
 `
 
 const FooterIcons = styled.div`
@@ -76,14 +76,14 @@ align-items: center;
 `
 const FooterRight =styled.div`
 
-padding-top: 40px;
+// padding-top: 40px;
 display:flex;
-flex-direction: row;
-align-items: center;
+// flex-direction: row;
+// align-items: center;
 // justify-content: center;
-width: 100%;
-height: 80px;
-// margin-bottom: 10px;
+// width: 100%;
+// height: 20px;
+margin-bottom: 10px;
 
 
 
@@ -95,8 +95,8 @@ const TextLeft = styled.div`
 display:flex;
 flex-direction: column;
 // justify-content: space-around;
-padding-left: 100px;
-padding-right: 30%;
+// padding-left: 100px;
+// padding-right: 30%;
 
 
 p{
