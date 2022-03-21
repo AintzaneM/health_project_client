@@ -7,29 +7,30 @@ export const Header = () => {
     <Nav>
     <NavMenuLeft className='NavMenuLeft'>
       
-      <Logo className='logo-img'>
-        {/* <a href="/" alt="" /> */}
-        <img src="/logo.png" alt="" ></img> 
-      </Logo>
-      <Link to="/" style = {{textDecoration:"none"}}>
-      {/* <span>health-test</span> */}
+      <Link  href="/" className='logo-img'>
+        <Logo src="/logo.png" alt="" ></Logo> 
       </Link>
+      
     </NavMenuLeft>
         
         <NavMenuCenter className='NavMenuCenter'> 
+
+            <Link href="/">
+                <span>Inicio</span>
+            </Link>
        
             <Link href="/quienes-somos">
                 <span>Quiénes somos</span>
             </Link>
-            <a href="">
+            <Link href="/formacion">
                 <span>Formación</span>
-            </a>
-            <a href="">
+            </Link>
+            {/* <a href="">
                 <span>Equipo</span>
             </a>
             <a href="">
                 <span>Contacto</span>
-            </a>
+            </a> */}
 
         </NavMenuCenter>
         
@@ -69,7 +70,7 @@ align-items: center;
 
 `
 
-const Logo = styled.a`
+const Logo = styled.img`
 padding: 0;
 width: 60px;
 // margin-top: 4px;
