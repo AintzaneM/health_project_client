@@ -3,14 +3,17 @@ import styled from 'styled-components'
 import BannerNews from '../../components/bannerNews/BannerNews'
 import ImgSlider from '../../components/slider/ImgSlider'
 import Services from '../../components/services/Services'
+import Footer from '../../components/footer/Footer'
+import { Header } from '../../components/header/Header'
 
 export const Home = () => {
   return (
-    
+    <>
+
+    <Header/>
     <HomeContainer className='home-container'>
-      
       <ContainerTop className='top-home-container'>
-        <p className='small-text-home'>CONSCIENCIA</p>
+        {/* <p className='small-text-home'>CONSCIENCIA</p> */}
         <h1 className='motivational-text-home'>Toma el control de tu mente</h1>
         <p className='small-text-home'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
         <ContainerButtonHome>
@@ -28,18 +31,9 @@ export const Home = () => {
         <Services/>
         <Services/>
       </ContainerServices>
-
-      
-
-      
-      
-        
-      
-      
-      
-
-
     </HomeContainer>
+    <Footer/>
+    </>
   )
 }
 
@@ -49,7 +43,7 @@ position: relative;
 min-height: calc(100vh - 250px);
 overflow-x: hidden;
 display: block;
-top: 40px;
+// top: 40px;
 padding: 0 calc(3.5vw + 5px);
 `
 
@@ -65,6 +59,8 @@ margin: auto ;
 
 h1{
   font-size: 70px;
+  display-flex;
+  align-items: center;
   // padding-bottom:  10px;
 }
 `
