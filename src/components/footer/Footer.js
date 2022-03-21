@@ -6,32 +6,23 @@ import {Instagram, Email, Call, Home} from '@material-ui/icons';
 const Footer = () => {
   return (
     <ContainerFooter>
-
-      
-
         <FooterRight>
-
             <TextLeft>
-                
                 <p>
                 ¿HABLAMOS?<br/>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Iste atque ea quis molestias.<br/> Fugiat pariatur maxime quis culpa 
                 corporis vitae repudiandae aliquam voluptatem veniam,<br/> est atque cumque 
                 </p>
-
                 <a href="">
                     Queremos saber de ti
                 </a>
-               
+                <FooterBottom>
+                    <span>© 2021 Copyright: Cnsciencia project</span> 
+                </FooterBottom>
             </TextLeft>
-
-           
             
-
             <TextRight >
-                <div className="container-left">
-                
                 <p className="container-left">CONTACTA<br/>
                 <Call/> 6XX XX XX XX <br/>
                 <Home/>Iste atque ea quis molestias.
@@ -40,19 +31,8 @@ const Footer = () => {
                     <Email className="email-icon"/>
                 </FooterIcons> 
                 </p>
-                <FooterBottom>
-                    <span>© 2021 Copyright: Cnsciencia project</span> 
-                </FooterBottom>
-                </div>
             </TextRight>
-            
         </FooterRight>      
-
-       
-
-        
-        
-
     </ContainerFooter>
   )
 }
@@ -63,6 +43,10 @@ const ContainerFooter = styled.div`
 // position: sticky;
 // margin-top: 40px;
 padding-top: 30px;
+display: grid;
+grid-gap: 25px;
+gap: 25px;
+grid-template-columns: repeat(4, minmax(0, 1fr));
 
 // top: 0;
 // left: 0;
@@ -91,6 +75,7 @@ align-items: center;
 }
 `
 const FooterRight =styled.div`
+
 padding-top: 40px;
 display:flex;
 flex-direction: row;
@@ -99,6 +84,7 @@ align-items: center;
 width: 100%;
 height: 80px;
 // margin-bottom: 10px;
+
 
 
 `
@@ -137,8 +123,6 @@ a{
     background-color: #3c096c;
     color: #e0cdcd;
 }
-
-
 `
 const TextRight = styled.div`
 // display: flex;
@@ -153,20 +137,9 @@ p{
     
     
 }
-
 `
-
 const FooterBottom = styled.div`
 position:relative;
-// margin-top: 60px;
-
-// height: 60px;
-// margin-top: 20px;
-// background-color: #e0cdcd;
+margin-top: 20px;
 color: #3c096c;
-// padding:  15px 0;
-// display:flex;
-// justify-content: center;
-// align-items: center;
-
 `
