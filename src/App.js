@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from "./components/header/Header";
 import { Home } from "./pages/home/Home"
 import { AboutUs } from "./pages/aboutUs/AboutUs"
-import Footer from './components/footer/Footer'
+// import Footer from './components/footer/Footer'
+import Modules from './pages/modules/Modules';
 
 
 
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route exact path='/quienes-somos'
             element= {<AboutUs/>}>
+          </Route>
+          <Route exact path='/formacion'
+            element= {<Modules/>}>
           </Route>
         
       
