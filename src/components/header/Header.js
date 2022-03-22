@@ -36,9 +36,9 @@ export const Header = () => {
         
         <NavMenuRight>
             
-            <a href="">
+            <Link href="/login">
                 <span>CONÉCTATE</span>
-            </a>                
+            </Link>                
             
 
         </NavMenuRight>
