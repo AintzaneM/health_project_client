@@ -45,8 +45,6 @@ export default Services;
 const Container = styled.div`
 padding: 0 0 26px;
 margin-left: 35px;
-
-
 `;
 
 const Content = styled.div`
