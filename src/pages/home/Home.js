@@ -17,10 +17,10 @@ export const Home = () => {
         <h1 className='motivational-text-home'>Toma el control de tu mente</h1>
         <p className='small-text-home'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
         <ContainerButtonHome>
-            <a href="">
+            <a href="/quienes-somos">
                 <span>CONÓCENOS</span>
             </a>
-            <a href="">
+            <a href="/registro">
                 <span>CREA TU CUENTA</span>
             </a>
         </ContainerButtonHome>
