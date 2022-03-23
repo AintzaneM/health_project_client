@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Instagram, Email, Call, Home} from '@material-ui/icons';
+// import {Instagram, Email, Call, Home} from '@material-ui/icons';
 
 
 const Footer = () => {
@@ -11,12 +11,11 @@ const Footer = () => {
                 <p>
                 ¿HABLAMOS?<br/>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Iste atque ea quis molestias.Fugiat pariatur maxime quis culpa 
-                corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque 
                 </p>
-                <a href="">
+                <a href="/">
                     Queremos saber de ti
                 </a>
+              
                 <FooterBottom>
                     <span>© 2021 Copyright: Cnsciencia project</span> 
                 </FooterBottom>
@@ -40,69 +39,50 @@ const Footer = () => {
 export default Footer
 
 const ContainerFooter = styled.div`
-// position: sticky;
-// margin-top: 40px;
-// padding-top: 30px;
-// display: grid;
-// grid-gap: 25px;
-// gap: 25px;
-// grid-template-columns: repeat(4, minmax(0, 1fr));
 
-// top: 0;
-// left: 0;
-// right: 0;
-height: 300px;
+height: 25vh;
 width: 100%;
 background-color: #ffc05c;
 display:flex;
 align-items: center;
-// justify-content:center;
+justify-content:center;
+text-align: center;
 // flex-direction: column;
 `
 
-const FooterIcons = styled.div`
-padding-top: 20px;
-display:flex;
-// justify-content: center;
-align-items: center;
-.instagram-icon {
-    margin-right: 10px;
-}
+// const FooterIcons = styled.div`
+// padding-top: 20px;
+// display:flex;
+// // justify-content: center;
+// align-items: center;
+// .instagram-icon {
+//     margin-right: 10px;
+// }
 
-.email-icon{
-    margin-left: 10px;
+// .email-icon{
+//     margin-left: 10px;
 
-}
-`
+// }
+// `
 const FooterRight =styled.div`
 
-// padding-top: 40px;
-display:flex;
-// flex-direction: row;
-// align-items: center;
-// justify-content: center;
-// width: 100%;
-// height: 20px;
-margin-bottom: 10px;
+// // padding-top: 40px;
+// display:flex;
+// // flex-direction: row;
+// // align-items: center;
+// // justify-content: center;
+// // width: 100%;
+// // height: 20px;
+// margin-bottom: 10px;
 
 
 
 `
 const TextLeft = styled.div`
 
-// height: 5vh;
-// width: 50%;
-display:flex;
-flex-direction: column;
-// justify-content: space-around;
-// padding-left: 100px;
-// padding-right: 30%;
-
-
 p{
-    margin-bottom: 20px;;
-    
-    font-size: 14px;
+    margin-bottom: 20px;
+    font-size: 20px;
     // width: 40%;
 }
 
@@ -113,7 +93,7 @@ a{
     justify-content: center;
     text-align:center;
     // margin: 0 20px;
-    width: 40%;
+    // width: 40%;
     background-color: #e0cdcd;
     border-radius: 14px;
     padding:10px;
@@ -124,20 +104,20 @@ a{
     color: #e0cdcd;
 }
 `
-const TextRight = styled.div`
-// display: flex;
-// justify-content: flex-end;
-// width: 100%
-display:flex;
-flex-direction: column;
-align-items: center;
-margin-right: 20px;
+// const TextRight = styled.div`
+// // display: flex;
+// // justify-content: flex-end;
+// // width: 100%
+// display:flex;
+// flex-direction: column;
+// align-items: center;
+// margin-right: 20px;
 
-p{
+// p{
     
     
-}
-`
+// }
+// `
 const FooterBottom = styled.div`
 position:relative;
 margin-top: 20px;
