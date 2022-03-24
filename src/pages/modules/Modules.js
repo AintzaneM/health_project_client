@@ -47,9 +47,13 @@ const ContainerModulesTop = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
+color: #3c1642;
 p{
   font-size: 70px;
-  }
+  margin: 20px auto;
+  padding: 40px 0 0px 0;
+  text-align: center;
+}
 `
 
 const ContainerDropdown = styled.div`
