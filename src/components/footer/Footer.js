@@ -6,21 +6,15 @@ import styled from 'styled-components'
 const Footer = () => {
   return (
     <ContainerFooter>
-        
             <TextLeft>
-                
-                <span>¿HABLAMOS?</span>
+                <p style={{fontWeight: "700"}}>¿HABLAMOS?</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 </p>
                 <a href="/">
                     Queremos saber de ti
                 </a>
-              
-                
-                <span>© 2021 Copyright: Cnsciencia project</span> 
-               
+                <p>© 2021 Copyright: Cnsciencia project</p> 
             </TextLeft>
-             
     </ContainerFooter>
   )
 }
@@ -28,6 +22,9 @@ const Footer = () => {
 export default Footer
 
 const ContainerFooter = styled.div`
+
+position: relative;
+bottom:0;
 height: 25vh;
 width: 100%;
 background-color: #bfd8bd;
@@ -36,18 +33,36 @@ display:flex;
 align-items: center;
 justify-content:center;
 text-align: center;
-// flex-direction: column;
+padding: 40px;
 `
 const TextLeft = styled.div`
+// position: relative;
+padding: 20px;
+// position: absolute;
+// bottom:0;
 
 p{
-    font-size: 20px;  
+    
+    font-size: 20px; 
+    // margin: 20px 10px;
+    @media (min-width: 481px) and (max-width: 768px) {
+        font-size: 16px; 
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 12px; 
+
+    }
 }
 span{
     font-size: 20px;
+    
+    
 }
 
 a{
+    @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 14px; 
+    }
     text-decoration: none;
     display:flex;
     align-items: center;
@@ -58,9 +73,9 @@ a{
     background-color: #3c1642;
     color: #bfd8bd;
     border-radius: 14px;
-    padding:20px;
-    margin: 20px auto;
-    position: relative;
+    padding:20px 10px;
+    // margin: 20px 10px;
+    // position: relative;
     font-weight: bold;
     -webkit-box-shadow: 0 8px 6px -6px #3c1642;
     -moz-box-shadow: 0 8px 6px -6px #3c1642;
@@ -68,24 +83,21 @@ a{
     &:hover{
     background-color: #edeec9;
     color: #3c1642;
-}
-`
-// const TextRight = styled.div`
-// // display: flex;
-// // justify-content: flex-end;
-// // width: 100%
-// display:flex;
-// flex-direction: column;
-// align-items: center;
-// margin-right: 20px;
 
-// p{
+
     
     
-// }
-// `
-// const FooterBottom = styled.div`
-// position:relative;
-// margin-top: 20px;
-// color: #3c096c;
-// `
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+}
+
+
+
+`

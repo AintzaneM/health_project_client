@@ -87,6 +87,7 @@ margin: 10px 20px;
 max-height: 60px;
 display:block;
 width: 100%;
+border-radius: 14px;
 `
 
 const Link = styled.a`
@@ -120,7 +121,6 @@ position: relative;
 
 
 @media screen and (max-width: 768px) {
-    
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -128,33 +128,6 @@ position: relative;
     transition: max-height 0.3s ease-in;
     background-color: #bfd8bd;
     width: 100%;
-   
-    
   }
 `
 
-// const NavMenuRight= styled.div`
-// display: flex;
-// justify-content: flex-end;
-// color: #3c096c;
-// font-weight: bold;
-
-
-// a{
-//     text-decoration: none;
-//     margin-right: 20px;
-//     background-color: #e0cdcd;
-//     border-radius: 14px;
-//     padding:10px;
-//     position: relative;
-//     &:hover{
-//     background-color: #3c096c;
-//     color: #e0cdcd;
-//     }
-
-    
-// }
-
-// @media screen and (max-width: 768px) {
-//     display: none;
-//   }
