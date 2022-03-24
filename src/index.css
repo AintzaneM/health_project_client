@@ -1,15 +1,19 @@
 /* color
-purple: 3c096c
+purple: 3c096c 
+purple2: #3c1642
 light-purple: 5a189a
 beige: e0cdcd
 yellow: ffc05c
+white-green: dde7c7
+white-beige: edeec9
+semi-green-navbar: bfd8bd
 
 
 */
 
 html {
     scroll-behavior: smooth;
-  }
+}
   
   * {
     box-sizing: border-box;
@@ -23,8 +27,8 @@ html {
 } */
 
 body {
-    background-color: #e0cdcd;
+    background-color: #edeec9;
     margin:0;
     padding: 0;
-    font-family: "Fredoka"
+    font-family:"Comfortaa"
 }

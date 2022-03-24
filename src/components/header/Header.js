@@ -32,8 +32,8 @@ export const Header = () => {
           <Link href="/formacion">
             <span>Formación</span>
           </Link>
-          <Link href="/login">
-            <span>CONÉCTATE</span>
+          <Link href="/login" >
+            <span style={{fontWeight: "700"}}>CONÉCTATE</span>
           </Link>
         </NavMenuCenter>
       </Nav>
@@ -95,6 +95,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 margin-right: 20px;
+font-size: 16px;
 color: #3c1642;
 border-bottom: solid;
 transition: all 0.3s ease-in-out;
@@ -103,7 +104,6 @@ transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
-//  padding: 20px;
  margin: 20px 0px;
  display: flex;
  align-items: center;
