@@ -24,8 +24,8 @@ export default Footer
 const ContainerFooter = styled.div`
 
 position: relative;
-bottom:0;
-height: 25vh;
+bottom: 0;
+min-height: 100%;
 width: 100%;
 background-color: #bfd8bd;
 color:  #3c1642;
@@ -33,13 +33,14 @@ display:flex;
 align-items: center;
 justify-content:center;
 text-align: center;
-padding: 40px;
+// padding: 40px;
 `
 const TextLeft = styled.div`
 // position: relative;
 padding: 20px;
 // position: absolute;
 // bottom:0;
+width: 100%;
 
 p{
     
@@ -50,6 +51,7 @@ p{
     }
     @media (min-width: 320px) and (max-width: 480px) {
         font-size: 12px; 
+        
 
     }
 }
@@ -61,8 +63,14 @@ span{
 
 a{
     @media (min-width: 320px) and (max-width: 480px) {
-        font-size: 14px; 
+        font-size: 10px; 
+        // padding: 10px 20px;
+        // width: 70%;
+        // margin: 0 auto;
+        
     }
+    width: 70%;
+    margin: 0 auto;
     text-decoration: none;
     display:flex;
     align-items: center;
@@ -73,9 +81,7 @@ a{
     background-color: #3c1642;
     color: #bfd8bd;
     border-radius: 14px;
-    padding:20px 10px;
-    // margin: 20px 10px;
-    // position: relative;
+    padding:10px 10px;
     font-weight: bold;
     -webkit-box-shadow: 0 8px 6px -6px #3c1642;
     -moz-box-shadow: 0 8px 6px -6px #3c1642;
